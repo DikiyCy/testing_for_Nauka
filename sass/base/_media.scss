@@ -1,0 +1,54 @@
+// правила для размеров от 1531 до 1923
+@media (max-width: 1923px) {
+
+}
+// правила для размеров от 1201 до 1530
+@media (max-width: 1530px) {
+}
+// правила для размеров от 992 до 1200
+@media (max-width: 1200px) {
+}
+// правила для размеров от 768 до 991
+@media (max-width: 991px) {
+	.employees {
+		.container {
+			overflow: auto;
+			padding-right: 20px;
+		}
+	}
+}
+// __________mobile__________
+// правила для размеров от 576 до 767
+@media (max-width: 767px) {
+
+}
+// правила для размеров от нуля(чаще320) до 575
+@media (max-width: 575px) {
+	.changе {
+		.container {
+			width: 100%;
+			align-items: flex-start;
+			flex-direction: column;
+		}
+		.btn_change {
+			margin-bottom: 10px;
+		}
+
+	}
+	.modal {
+		.employe {
+			&__wrapper {
+				&_answer {
+					margin: 0;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: flex-end;
+				}
+			}
+		}
+		.btn_form {
+			margin: 0;
+			margin-top: 20px;
+		}
+	}
+}

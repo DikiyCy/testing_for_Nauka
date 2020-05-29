@@ -1,0 +1,29 @@
+// переменные
+@import 'base/variables';
+
+body {
+	font-family: 'Roboto';
+	background-color: #fff;
+	font-size: 14px;
+}
+.body_overflow {
+	overflow: hidden;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+// блоки
+@import 'block/header';
+@import 'block/search';
+@import 'block/change';
+@import 'block/employes';
+@import 'block/modal';
+@import 'block/input';
+@import 'block/button';
+
+// для адаптивной верстки
+@import 'base/media';

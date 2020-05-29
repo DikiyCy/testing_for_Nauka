@@ -1,0 +1,34 @@
+.btn {
+	background-color: #fff;
+	height: 30px;
+	border: 1.5px solid $rose;
+	border-radius: 5px;
+	padding: 0 10px;
+	&_change {
+		font-size: 14px;
+		margin-right: 20px;
+		box-shadow: 2px 2px 1px 0px $gray;
+	}
+	&:hover, &:active {
+		background-color: $green;
+		border: 1.5px solid $green;
+		box-shadow: 2px 2px 1px 0px $gray;
+		outline: none;
+	}
+	&:focus {
+		outline: none;
+	}
+	&_form {
+		height: 35px;
+		margin-bottom: 20px;
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
+	}
+	&_calendar {
+		padding: 0;
+		height: 35px;
+		width: 35px;
+		border: 1px solid $rose;
+	}
+}

@@ -1,0 +1,65 @@
+.employees {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	min-width: 350px;
+	.table {
+		width: 100%;
+		&__header {
+			background-color: $violet;
+			height: 30px;
+			th {
+				padding-left: 10px;
+				cursor: pointer;
+				vertical-align: middle;
+				p{
+					display: inline-block;
+					margin: 0 15px 0 0;
+				}
+			}
+			.header {
+				background: url("../icon/small.gif") 95% center  no-repeat;
+			  }
+			.headerSortUp {
+				background-image: url("../icon/small_asc.gif");
+				background-color: $gray;
+			  }
+			.headerSortDown {
+				background-image: url("../icon/small_desc.gif");
+				background-color: $gray;
+			  }
+		}
+		&__items {
+			height: 80px;
+			cursor: pointer;
+			&:nth-child(odd) {
+				background-color: $rose;
+			}
+			&:hover, &:focus {
+				background-color: $green;
+				border: 1px solid $gray;
+				outline: none;
+			}
+		}
+		td:not(:last-child), th:not(:last-child) {
+			border-right: 1px solid #000000;
+		}
+		td {
+			padding-left: 10px;
+			padding-right: 10px;
+			&:nth-child(7) {
+				text-align: center;
+				vertical-align: middle;
+			}
+		}
+		&__img {
+			min-width: 70px;
+			max-width: 70px;
+			min-height: 60px;
+			max-height: 60px;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
